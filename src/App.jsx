@@ -20,7 +20,7 @@ function App() {
     try {
 
       const cityName = inputRef.current.value
-      const apiKey = 'dc972233c68e7abe443bf5e38da343cb'
+      const apiKey = import.meta.env.VITE_OPENWEATHER_API_KEY
 
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&lang=pt_br&units=metric`
       const url5Days = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}&lang=pt_br&units=metric`
