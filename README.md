@@ -1,12 +1,41 @@
-# React + Vite
+# 🌦️ Aplicativo de Previsão do Tempo com React e OpenWeatherMap
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicativo web construído com React que permite ao usuário buscar cidades e visualizar informações climáticas em tempo real, incluindo temperatura, velocidade do vento, umidade e localização no mapa utilizando.
 
-Currently, two official plugins are available:
+## 🔗 Acesse o projeto online
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [Clique aqui para ver o app no ar](https://previsao-do-tempo-orcin-ten.vercel.app)  
 
-## Expanding the ESLint configuration
+## 🔧 Tecnologias
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Axios
+- OpenWeatherMap API
+- React Leaflet / Leaflet
+- React Icons
+- Vite
+- CSS Modules
+
+## 🚀 Funcionalidades
+
+- Busca por cidade
+- Exibição de temperatura, pressão, umidade
+- Mapa interativo com marcador da cidade buscada
+- Tratamento de erros (ex: cidade inválida)
+- Layout responsivo e estilização modular
+
+## 🛠️ Instalação local
+
+```bash
+# Clone o repositório
+git clone https://github.com/ezequielhenrique/previsao-do-tempo
+cd weather-app
+
+# Instale as dependências
+npm install
+
+# Crie o arquivo .env com sua chave da API
+echo "VITE_OPENWEATHER_API_KEY=sua_chave_aqui" > .env
+
+# Inicie o servidor de desenvolvimento
+npm run dev
